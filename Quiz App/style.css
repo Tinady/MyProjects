@@ -12,6 +12,10 @@ body{
     
 }
 
+h1{
+    padding-left:40px ;
+}
+
 
 .quiz-container{
     background-color: aliceblue;
@@ -25,11 +29,19 @@ body{
 button
 {
     background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
-    width: 280px;
+    width:100%;
     padding:15px 5px;
     margin-top: 26px;
     margin-bottom: 0;
     margin-right: 0px;
     margin-left: 0px;
     border: none;
+    cursor: pointer;
 }
+
+button:hover{
+
+    background: linear-gradient(90deg, #eac8ff 0%, #8088ff 100%);
+    color:white;
+ }
+
