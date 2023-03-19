@@ -1,49 +1,66 @@
 const  quizData= [
     {
         question:"How old are u?",
-        a_1:19,
-        a_2:29,
-        a_3:39,
-        a_4:49,
+        a:19,
+        b:29,
+        c:39,
+        d:49,
          },
     
          {
             question:"What is your favourite coloe",
-            a_1:'green',
-            a_2:'blue',
-            a_3:'yellow',
-            a_4:'pink',
+            a:'green',
+            b:'blue',
+            c:'yellow',
+            d:'pink',
              },
 
        {
                 question:"what is my name",
-                 a_1:'green',
-                 a_2:'blue',
-                 a_3:'yellow',
-                 a_4:'Brown',
+                 a:'green',
+                 b:'blue',
+                 c:'yellow',
+                 d:'Brown',
              },
                 
 ]
 
-const questionEl= document.getAnimations('question')
+const questionEl= document.getElementById('question')
  const a_text= document.getElementById('a-text')
  const b_text=document.getElementById('b-text')
  const c_text=document.getElementById('c-text')
  const d_text=document.getElementById('d-text')
+ const submitbtn=document.getElementById('submit')
 
-let cuurentQuestion=0;
+let currentQuiz=0;
+
 
 loadQuiz();
 
 
-
 function loadQuiz(){
 
-    const currentQuizData=  quizData;
-    questionEl.innerHTML= quizData[currentQuestion]
+    const currentQuizData=  quizData[currentQuiz];
+    questionEl.innerText= currentQuizData.question;
+    a_text.innerText= currentQuizData.a;
+    b_text.innerText= currentQuizData.b;
+    c_text.innerText= currentQuizData.c;
+    d_text.innerText= currentQuizData.d;
 
 
 
-    currentQuestion++;
+
+    
 }
+
+
+submitbtn.addEventListener("click", ()=>{
+
+    currentQuiz++;
+
+    loadQuiz();
+
+
+});
+
 
