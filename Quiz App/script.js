@@ -25,7 +25,7 @@ const  quizData= [
                 
 ]
 
-
+const questionEl= document.getAnimations('question')
  const a_text= document.getElementById('a-text')
  const b_text=document.getElementById('b-text')
  const c_text=document.getElementById('c-text')
@@ -39,5 +39,11 @@ loadQuiz();
 
 function loadQuiz(){
 
+    const currentQuizData=  quizData;
+    questionEl.innerHTML= quizData[currentQuestion]
+
+
+
     currentQuestion++;
 }
+
