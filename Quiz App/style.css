@@ -28,11 +28,11 @@ ul{
 }
 
 
-.quiz-container{
+.quiz-header{
     background-color: aliceblue;
     border-radius: 5px;
     width: 300px;
-    height: 280px;
+    height: 250px;
     padding: 0px 2px;
     box-shadow: 4px 4px rgb(74, 76, 151,0.75);
 }
@@ -42,14 +42,13 @@ button
     background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
     width:100%;
     padding:15px 5px;
-    margin-top: 10px;
+    margin-top: -300px;
     margin-bottom: 0;
     margin-right: 0px;
     margin-left: 0px;
     border: none;
     cursor: pointer;
 }
-
 button:hover{
 
     background: linear-gradient(90deg, #eac8ff 0%, #8088ff 100%);
