@@ -20,7 +20,24 @@ const  quizData= [
                  a_1:'green',
                  a_2:'blue',
                  a_3:'yellow',
-                 a_4:'pink',
+                 a_4:'Brown',
              },
                 
 ]
+
+
+ const a_text= document.getElementById('a-text')
+ const b_text=document.getElementById('b-text')
+ const c_text=document.getElementById('c-text')
+ const d_text=document.getElementById('d-text')
+
+let cuurentQuestion=0;
+
+loadQuiz();
+
+
+
+function loadQuiz(){
+
+    currentQuestion++;
+}
