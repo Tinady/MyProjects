@@ -40,9 +40,9 @@ ul{
 button
 {
     background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
-    width:100%;
+    width:300px;
     padding:15px 5px;
-    margin-top: -300px;
+    margin-top: 0px;
     margin-bottom: 0;
     margin-right: 0px;
     margin-left: 0px;
@@ -50,7 +50,6 @@ button
     cursor: pointer;
    box-shadow: 4px 4px rgb(74, 76, 151,0.75);
 }
-button:hover{
 
     background: linear-gradient(90deg, #eac8ff 0%, #8088ff 100%);
     color:white;
